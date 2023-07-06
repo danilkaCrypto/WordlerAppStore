@@ -14,6 +14,8 @@
 		971FA5082A56EB3C00F395BA /* WordlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971FA5072A56EB3C00F395BA /* WordlerTests.swift */; };
 		971FA5122A56EB3C00F395BA /* WordlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971FA5112A56EB3C00F395BA /* WordlerUITests.swift */; };
 		971FA5142A56EB3C00F395BA /* WordlerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971FA5132A56EB3C00F395BA /* WordlerUITestsLaunchTests.swift */; };
+		971FA5232A56EE8E00F395BA /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971FA5222A56EE8E00F395BA /* ColorExt.swift */; };
+		971FA5252A56F0EB00F395BA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971FA5242A56F0EB00F395BA /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		971FA50D2A56EB3C00F395BA /* WordlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		971FA5112A56EB3C00F395BA /* WordlerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordlerUITests.swift; sourceTree = "<group>"; };
 		971FA5132A56EB3C00F395BA /* WordlerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordlerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		971FA5222A56EE8E00F395BA /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
+		971FA5242A56F0EB00F395BA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,9 @@
 		971FA4F52A56EB3900F395BA /* Wordler */ = {
 			isa = PBXGroup;
 			children = (
+				971FA5212A56EE6800F395BA /* Extensions */,
+				971FA5202A56EE5B00F395BA /* View */,
 				971FA4F62A56EB3A00F395BA /* WordlerApp.swift */,
-				971FA4F82A56EB3A00F395BA /* ContentView.swift */,
 				971FA4FA2A56EB3C00F395BA /* Assets.xcassets */,
 				971FA4FC2A56EB3C00F395BA /* Preview Content */,
 			);
@@ -125,6 +130,23 @@
 				971FA5132A56EB3C00F395BA /* WordlerUITestsLaunchTests.swift */,
 			);
 			path = WordlerUITests;
+			sourceTree = "<group>";
+		};
+		971FA5202A56EE5B00F395BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				971FA4F82A56EB3A00F395BA /* ContentView.swift */,
+				971FA5242A56F0EB00F395BA /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		971FA5212A56EE6800F395BA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				971FA5222A56EE8E00F395BA /* ColorExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +280,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				971FA4F92A56EB3A00F395BA /* ContentView.swift in Sources */,
+				971FA5252A56F0EB00F395BA /* HomeView.swift in Sources */,
+				971FA5232A56EE8E00F395BA /* ColorExt.swift in Sources */,
 				971FA4F72A56EB3A00F395BA /* WordlerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,11 +444,13 @@
 				DEVELOPMENT_TEAM = 96D4BGJXCC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Wordler2;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,11 +475,13 @@
 				DEVELOPMENT_TEAM = 96D4BGJXCC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Wordler2;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
